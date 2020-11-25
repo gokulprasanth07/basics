@@ -1,30 +1,47 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
-  html,
-  body {
-    height: 100%;
-    width: 100%;
+html {
+  font-size: 65%;
+  height: 100%;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
   }
-
-  body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  }
-
-  body.fontLoaded {
-    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  }
-
-  #app {
-    background-color: #fafafa;
+  #root {
+    background: #D5F5E3;
     min-height: 100%;
     min-width: 100%;
   }
-
-  p,
-  label {
-    font-family: Georgia, Times, 'Times New Roman', serif;
-    line-height: 1.5em;
+  body {
+    background: #D5DBDB;
+    font-size: 10px;
+    overflow-x:hidden ;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
+    margin-top: 0px !important;
+    height: 100%;
+  }
+  img {
+    border: 0;
+  }
+  li{
+    list-style-type:none;
+  }
+  a{
+    text-decoration:none;
+  }
+  input:focus,
+  textarea:focus,
+  button:focus,
+  a:focus,
+  
+  article:focus {
+    outline: none !important;
+    border:none;
   }
 `;
 
